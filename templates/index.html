@@ -25,7 +25,11 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
     passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
 </p>
 <h2 class="text-center mt-2 mb-4">Open positions</h2>
-<p>TODO - show the jobs here</p>
+<div>
+    {% for job in jobs %}
+      {% include 'jobitem.html' %}
+    {% endfor %}
+</div>
     <div class="text-center">
 <button class="btn btn-primary btn-lg">Contact Us</button>
         <p class="mt-4">Copyright 2023, David</p>
